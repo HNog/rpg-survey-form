@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  
+</head>
+<body>
+	<div class="titleDiv">
+		<h1 id="title">RPG Survey form</h1>
+	</div>
+	<main>
+		<div>
+			<p id="description">Let us know how do you play RPG's</p>
+		<div>
+			<form id="survey-form" method="GET" action="www.put/the/link/server/here.com">
+				<div class="labels">
+					<label id="name-label" for="name">*First name:</label><br>
+				</div>
+				<div class="inputDiv">
+					<input type="text" name="name" id="name" class="input-field" required placeholder="Enter your Firstname" autofocus="type"><br>
+				</div>
+
+				<div>
+					<div class="labels">
+						<label id="name-label2" for="lastname">*Last name:</label><br>
+					</div>
+					<div class="inputDiv">
+						<input type="text" name="lastname" id="lastname" class="input-field" required placeholder="Enter your lastname"><br>
+					</div>
+
+				<div>
+					<div class="labels">
+						<label id="email-label" for="email">*Email:</label><br>
+					</div>
+					<div class="inputDiv">
+						<input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email"><br>
+					</div>
+				</div>
+
+				<div>
+					<div class="labels">
+						<label id="number-label" for="age">Age:</label><br>
+					</div>
+					<div class="inputDiv">
+						<input type="number" name="age" id="number" min="10" max="100" class="input-field" placeholder="Age">
+					</div>
+				</div>
+				<div class="labels">
+					<label id="questionP" for="playmost">Favorite kind of cenario?</label>
+				</div>
+				<div class="inputDiv">
+					<select id="dropdown" name="playmost" class="dropdown">
+						<option disabled value>Select an option</option>
+						<option value="high">High Fantasy</option>
+						<option value="sns">Sword and Sorcery</option>
+						<option value="dark">Dark Fantasy</option>
+						<option value="horror">Horror</option>
+						<option value="others">Others</option>
+					</select>
+				</div>	
+				<div class="labels">
+					<label for="howlong">How long have been you playing?</label>
+				</div>
+				<div class="inputDiv">
+					<ul>
+						<li class="radio"><label>Beginner<input name="radio-buttons" value="1" type="radio" class="howlong"></label></li>
+
+						<li class="radio"><label>Some time already<input name="radio-buttons" value="2" type="radio" class="howlong"></label></li>
+
+						<li class="radio"><label>Rusty<input name="radio-buttons" value="3" type="radio" class="howlong"></label></li>
+
+						<li class="radio"><label>Veteran<input name="radio-buttons" value="4" type="radio" class="howlong"></label></li>
+					</ul>
+				</div>
+				<div class="labels">
+					<label for="preferences">What do you expect more in a RPG session?</label><br>
+				</div>
+				<div class="inputDiv">
+					<ul id="preferences">
+						<li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="expectMore">Action/Combat</label></li>
+
+						<li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="expectMore">Social interaction</label></li>
+
+						<li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="expectMore">Exploration</label></li>
+					</ul>
+				</div>
+				<div class="labels">
+					<label for="comments">Any Comments of Suggestions?</label>
+				</div>
+				<div class="inputDiv">
+					<textarea id="comments" class="input-field" name="comment" placeholder="Enter your comment here..."></textarea>
+				</div>
+				<button id="submit" type="submit">Submit</button>
+			</form>
+		</div>
+	</main>
+
+
+</body>
+</html>
